@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    text-transform: capitalize;
+    color: #595d6e;
+}
+
+body {
+    background-color: #dfdfdf57;
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    font-family: Poppins, Helvetica, sans-serif;
+}
+
+header {
+    background-color: white;
+    padding: 20px;
+    grid-area: 1 /1 / span 2 / span 10;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-flow: column wrap;
+    align-content: flex-start;
+    justify-content: space-between;
+    position: relative;
+}
+
+header .logo {
+    background-image: url(admin.png);
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+
+    border-radius: 20%;
+}
+
+.university {
+    background-image: url(جامعة\ المنوفية.png);
+    background-size: cover;
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    left: 1200px;
+    top: -2px;
+}
+
+header .partition {
+    margin: 40px;
+    letter-spacing: 2px;
+}
+
+.email,
+.name {
+    margin: 15px;
+    margin-left: 25px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+}
+
+/* ! ************************************** */
+
+/* form {
+    background-color: #6e756c;
+    grid-area: 3/1/span 7 / span 10;
+} */
+
+form {
+    background-color: #6e756c;
+    /* width: inherit; */
+    /* height: 60%; */
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    grid-area: 3/1/span 7 / span 10;
+}
+
+.container {
+        width: 500px;
+        height: 500px;
+        padding: 50px;
+        background-color: white;
+        border-radius: 20px 100px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+}
+
+.user-name,
+.password {
+    width: 400px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: #147499 solid 1px;
+}
+
+label {
+    color: #044057;
+    font-size: 20px;
+    align-self: flex-start;
+}
+
+
+
+.button {
+    margin-top: 60px;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    border: 3px #147499 solid;
+    border-radius: 50px;
+    width: 176px;
+    text-align: center;
+    transition-duration: 0.5s;
+    align-self: flex-start;
+}
+
+.button:hover {
+    background-color: #147499;
+    color: white;
+}
+
+
+
+
+
+
+
+/* ! ************************************** */
+footer {
+    padding: 20px;
+    grid-area: 10 /1 / auto/span 10;
+    background-color: #0000004a;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer i {
+    color: white;
+    letter-spacing: 5px;
+}

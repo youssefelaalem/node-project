@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    text-transform: capitalize;
+    color: #595d6e;
+}
+
+body {
+    background-color: #dfdfdf57;
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    font-family: Poppins, Helvetica, sans-serif;
+}
+
+header {
+    background-color: white;
+    padding: 20px;
+    grid-area: 1 /1 / span 2 / span 10;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-flow: column wrap;
+    align-content: flex-start;
+    justify-content: space-between;
+    position: relative;
+}
+
+header .logo {
+    background-image: url(admin.png);
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+
+    border-radius: 20%;
+}
+
+.university {
+    background-image: url(جامعة\ المنوفية.png);
+    background-size: cover;
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    left: 1200px;
+    top: -2px;
+}
+
+header .partition {
+    margin: 40px;
+    letter-spacing: 2px;
+}
+
+.email,
+.name {
+    margin: 15px;
+    margin-left: 25px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+}
+/* ********************************************************** */
+.container {
+    padding: 20px;
+    grid-area: 3 /1 / span 7 / span 10;
+    background-color: #313c2eb0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .partition,
+.subject {
+    background-color: white;
+    width: 49%;
+    padding: 20px;
+    /* display: flex; */
+    border-radius: 20px 100px;
+    /* justify-content: center; */
+}
+
+.container form {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    align-self: center;
+}
+
+h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+form .box1,
+.box2 {
+    margin-bottom: 20px;
+}
+
+.box1 input,
+.box2 input {
+    width: 350px;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.buttons input {
+    width: 100px;
+    height: 60px;
+    font-size: 20px;
+    margin: 30px;
+    font-weight: bold;
+}
+
+.any {
+    display: flex;
+    margin-top: 30px;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+
+.any div {
+    width: 40%;
+}
+
+.box3 input,
+.box4 input,
+.box5 input,
+.box6 input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.button input{
+    width: 100px;
+    height: 60px;
+    font-size: 20px;
+    margin: 30px;
+    margin-top: 45px;
+    font-weight: bold;
+}
+/* ********************************************** */
+footer {
+    padding: 20px;
+    grid-area: 10 /1 / auto/span 10;
+    background-color: #0000004a;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer i {
+    color: white;
+    letter-spacing: 5px;
+}

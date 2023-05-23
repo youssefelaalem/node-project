@@ -1,0 +1,69 @@
+<div class="partition">
+    <form action="">
+        <h2>add partition</h2>
+        <div class="box1">
+            <label for="name">
+                <h3>partition name</h3>
+            </label>
+            <input type="text" id="name" placeholder="type your subject name" />
+        </div>
+        <div class="box2">
+            <label for="code">
+                <h3>partition code</h3>
+            </label>
+            <input type="text" id="code" placeholder="type your subject code" />
+        </div>
+        <div class="buttons">
+            <input type="submit" value="save" />
+            <input type="reset" />
+        </div>
+    </form>
+</div>
+<div class="subject">
+    <form action="subjects" method="post">
+        <h2>add subjects</h2>
+        <div class="any">
+            <div class="box3">
+                <label for="name">
+                    <h3>subject name</h3>
+                </label>
+                <input type="text" id="name" placeholder="type your subject name" name="name" />
+            </div>
+            <div class="box4">
+                <label for="code">
+                    <h3>subject code</h3>
+                </label>
+                <input type="text" id="code" placeholder="type your subject code" name="code" />
+            </div>
+            <div class="box5">
+                <label for="code">
+                    <h3>partition</h3>
+                </label>
+                <select class="form-select" name="department" aria-label="Default select example">
+                    {{!-- <option selected>Open this select menu</option> --}}
+                    {{#each arr_department}}
+                    <option value="{{_id}}">{{name}}</option>
+                    {{/each}}
+                </select>
+                {{!-- <input type="text" id="code" placeholder="type your partition" name="department" /> --}}
+            </div>
+            {{! <div class="box6">
+                <label for="code">
+                    <h3>subjects you need</h3>
+                </label>
+                <input type="text" id="code" placeholder="type your subjects">
+            </div> }}
+        </div>
+        <div class="button">
+            <input type="submit" value="save" />
+            <input type="reset" />
+        </div>
+    </form>
+</div>
+
+{{!-- <h1>subjects</h1>
+<br>
+{{#each subjects}}
+<h2> Subject :{{name}} </h2>
+<h4> Code : {{code}} </h4>
+{{/each}} --}}

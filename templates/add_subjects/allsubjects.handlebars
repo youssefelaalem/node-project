@@ -1,0 +1,7 @@
+<h1>subjects</h1>
+<a href="/admin/create_subject"><h2>add new subject</h2></a>
+<br>
+{{#each subjects}}
+<h2><a href="subjects/{{_id}}"> {{name}} </a></h2>
+{{!-- <h4> Code : {{code}} </h4> --}}
+{{/each}}
